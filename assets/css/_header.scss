@@ -1,0 +1,90 @@
+#menu-btn {
+    position        : fixed;
+    top             : 1rem;
+    right           : 2rem;
+    width           : 5rem;
+    height          : 5rem;
+    line-height     : 5rem;
+    text-align      : center;
+    cursor          : pointer;
+    background-color: $green;
+    z-index         : 102;
+    display         : none;
+    @include fontStyle(2.5rem, $white);
+
+    &.fa-times {
+        color           : $black;
+        background-color: $white;
+    }
+}
+
+
+.header {
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    width           : 30rem;
+    min-height      : 100%;
+    padding         : 3rem;
+    background-color: $green;
+    z-index         : 101;
+
+    .logo {
+        @include fontStyle(3.5rem, $white);
+
+        i {
+            color: $yellow;
+        }
+    }
+
+    .navbar {
+        padding: 20% 0;
+
+        a {
+            display: block;
+            margin : 1.7rem 0;
+            @include fontStyle(2rem, $white);
+
+            i {
+                color: $yellow;
+            }
+
+            &:hover {
+                color: $yellow;
+
+                i {
+                    padding-right: 1rem;
+                    transition   : .5s ease;
+                }
+            }
+        }
+    }
+
+    .share {
+        text-align: center;
+
+        a {
+            height     : 4rem;
+            width      : 4rem;
+            line-height: 4rem;
+            margin     : 0 .3rem;
+            background : $white;
+            @include fontStyle(1.8rem, $black);
+
+            &:hover {
+                color     : $white;
+                background: $black;
+            }
+        }
+    }
+
+    .credit {
+        text-align : center;
+        padding-top: 15%;
+        @include fontStyle(1.5rem, $white);
+
+        span {
+            color: $yellow;
+        }
+    }
+}

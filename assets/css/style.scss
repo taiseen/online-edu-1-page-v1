@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* 13 Jan 2022  */
+
+* {
+    margin            : 0;
+    padding           : 0;
+    border            : 0;
+    outline           : none;
+    list-style        : none;
+    text-decoration   : none;
+    scroll-behavior   : smooth;
+    text-transform    : capitalize;
+    box-sizing        : border-box;
+    font-family       : 'Nunito', sans-serif;
+    transition        : all .1s linear;
+    /* user-select    : none; */
+}
+
+@import 'variables';
+
+html {
+    font-size : 62.5%;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 1rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $green;
+    }
+}
+
+body {
+    padding-left: 30rem;
+}
+
+@import 'header';
+@import 'responsive';

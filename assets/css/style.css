@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+/* 13 Jan 2022  */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  transition: all .1s linear;
+  /* user-select    : none; */ }
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden; }
+  html::-webkit-scrollbar {
+    width: 1rem; }
+  html::-webkit-scrollbar-track {
+    background: transparent; }
+  html::-webkit-scrollbar-thumb {
+    background: #44bb6a; }
+
+body {
+  padding-left: 30rem; }
+
+#menu-btn {
+  position: fixed;
+  top: 1rem;
+  right: 2rem;
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  cursor: pointer;
+  background-color: #44bb6a;
+  z-index: 102;
+  display: none;
+  font-size: 2.5rem;
+  color: #FFF; }
+  #menu-btn.fa-times {
+    color: #263268;
+    background-color: #FFF; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30rem;
+  min-height: 100%;
+  padding: 3rem;
+  background-color: #44bb6a;
+  z-index: 101; }
+  .header .logo {
+    font-size: 3.5rem;
+    color: #FFF; }
+    .header .logo i {
+      color: #FF0; }
+  .header .navbar {
+    padding: 20% 0; }
+    .header .navbar a {
+      display: block;
+      margin: 1.7rem 0;
+      font-size: 2rem;
+      color: #FFF; }
+      .header .navbar a i {
+        color: #FF0; }
+      .header .navbar a:hover {
+        color: #FF0; }
+        .header .navbar a:hover i {
+          padding-right: 1rem;
+          transition: .5s ease; }
+  .header .share {
+    text-align: center; }
+    .header .share a {
+      height: 4rem;
+      width: 4rem;
+      line-height: 4rem;
+      margin: 0 .3rem;
+      background: #FFF;
+      font-size: 1.8rem;
+      color: #263268; }
+      .header .share a:hover {
+        color: #FFF;
+        background: #263268; }
+  .header .credit {
+    text-align: center;
+    padding-top: 15%;
+    font-size: 1.5rem;
+    color: #FFF; }
+    .header .credit span {
+      color: #FF0; }
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%; } }
+@media (max-width: 991px) {
+  body {
+    padding-left: 0; }
+
+  #menu-btn {
+    display: block; }
+
+  .header {
+    left: -110%; }
+    .header.userClick {
+      left: 0;
+      transition: .5s ease;
+      box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7); } }
+@media (max-width: 450px) {
+  html {
+    font-size: 50%; } }
+
+/*# sourceMappingURL=style.css.map */
