@@ -1,0 +1,98 @@
+.contact {
+
+    .row {
+        display  : flex;
+        flex-wrap: wrap;
+        gap      : 2rem;
+
+        .contact-info-container {
+            width: 40rem;
+
+            .box {
+                margin-bottom: 2rem;
+                display      : flex;
+                gap          : 1.5rem;
+
+                i {
+                    height          : 5rem;
+                    width           : 5rem;
+                    line-height     : 5rem;
+                    border-radius   : 50%;
+                    text-align      : center;
+                    background-color: $green;
+                    margin-top      : -1rem;
+                    @include fontStyle(1.7rem, $white);
+                }
+
+                .info {
+                    h3 {
+                        padding-bottom: 1rem;
+                        @include fontStyle(2rem, $black);
+                    }
+
+                    p {
+                        @include fontStyle(1.5rem, $light-color);
+                    }
+
+
+                }
+
+                &:nth-child(even) {
+                    .info * {
+                        text-transform: lowercase;
+                    }
+                }
+            }
+
+            .share {
+                padding-top: 1rem;
+
+                a {
+                    height          : 5rem;
+                    width           : 5rem;
+                    line-height     : 5rem;
+                    margin-right    : .1rem;
+                    background-color: $black;
+                    text-align      : center;
+                    @include fontStyle(2rem, $white);
+
+                    &:hover {
+                        background-color: $green;
+                    }
+                }
+            }
+
+        }
+
+
+        form {
+            flex: 1 1 42rem;
+
+            .inputBox {
+                display        : flex;
+                flex-wrap      : wrap;
+                justify-content: space-between;
+
+                input {
+                    width: 49%;
+                }
+            }
+
+            .inputBox input,
+            textarea {
+                padding         : 1.4rem;
+                margin          : .7rem 0;
+                background-color: $light-bg;
+                text-transform  : none;
+                border          : $border;
+                @include fontStyle(1.6rem, $light-color);
+            }
+
+            textarea {
+                width : 100%;
+                resize: none;
+                height: 15rem;
+            }
+        }
+    }
+}

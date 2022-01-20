@@ -1,6 +1,6 @@
 #menu-btn {
     position        : fixed;
-    top             : 1rem;
+    top             : 2rem;
     right           : 2rem;
     width           : 5rem;
     height          : 5rem;
@@ -68,9 +68,9 @@
             height     : 4rem;
             width      : 4rem;
             line-height: 4rem;
-            margin     : 0 .3rem;
+            margin     : 28rem .3rem 0;
             background : $white;
-            @include fontStyle(1.8rem, $black);
+            @include fontStyle(2rem, $black);
 
             &:hover {
                 color     : $white;
@@ -81,7 +81,7 @@
 
     .credit {
         text-align : center;
-        padding-top: 15%;
+        padding-top: 8%;
         @include fontStyle(1.5rem, $white);
 
         span {

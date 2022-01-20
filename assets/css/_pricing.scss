@@ -1,0 +1,52 @@
+.pricing {
+
+    .box-container {
+        @include grid(30rem);
+
+        .box {
+            padding         : 2rem;
+            border          : $border;
+            text-align      : center;
+            background-color: $white;
+
+            h3 {
+                @include fontStyle(2rem, $black);
+            }
+
+            img {
+                height: 20rem;
+            }
+
+            .amount {
+                @include fontStyle(5rem, $black);
+
+                span {
+                    padding: 0 .5rem;
+                    @include fontStyle(2.5rem, $green);
+                }
+            }
+
+            .list {
+                padding: 1.5rem 0;
+
+                p {
+                    padding: 1rem 0;
+                    @include fontStyle(1.5rem, $light-color);
+
+                    i {
+                        color        : $green;
+                        padding-right: .5rem;
+
+                        &.fa-times {
+                            color: red;
+                        }
+                    }
+                }
+
+
+            }
+
+        }
+    }
+
+}

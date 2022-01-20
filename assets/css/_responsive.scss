@@ -21,7 +21,7 @@
         left: -110%;
 
         /* Behavior Changing ==> Help of JS */
-        
+
         &.userClick {
             left      : 0;
             transition: .5s ease;
@@ -40,4 +40,7 @@
         font-size: 50%;
     }
 
+    .contact .row form .inputBox input {
+        width: 100%;
+    }
 }
