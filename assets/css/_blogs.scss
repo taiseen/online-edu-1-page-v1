@@ -1,0 +1,65 @@
+.blogs {
+
+    .box-container {
+
+        @include grid(30rem);
+
+        .box {
+            text-align: center;
+            padding   : 2rem;
+            border    : $border;
+
+            &:hover img {
+                transform: translateY(-1rem);
+            }
+
+            img {
+                height: 20rem;
+            }
+
+            .title {
+                display      : block;
+                margin-bottom: 1rem;
+                @include fontStyle(2rem, $black);
+
+                &:hover {
+                    color          : $green;
+                    text-decoration: underline;
+                }
+            }
+
+            .blog-description {
+                padding    : 1rem 0;
+                line-height: 2;
+                @include fontStyle(1.4rem, $light-color);
+            }
+
+            .icons {
+                padding-top    : 1.7rem;
+                margin-top     : 1.5rem;
+                border-top     : $border;
+                display        : flex;
+                align-items    : center;
+                justify-content: space-between;
+
+                p {
+                    @include fontStyle(1.4rem, $light-color);
+
+                    i {
+                        padding-right: .5rem;
+                        color        : $green;
+                    }
+                }
+
+                a {
+                    @include fontStyle(1.4rem, $black);
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+    }
+}

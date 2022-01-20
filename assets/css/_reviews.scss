@@ -1,0 +1,36 @@
+.reviews {
+
+    .box-container {
+        @include grid(30rem);
+
+        .box {
+            padding         : 3rem 2rem;
+            text-align      : center;
+            background-color: $white;
+            border          : $border;
+
+            img {
+                height       : 10rem;
+                width        : 10rem;
+                border-radius: 50%;
+                margin-bottom: .5rem;
+            }
+
+            h3 {
+                @include fontStyle(2rem, $black);
+            }
+
+            p {
+                line-height: 2;
+                padding    : 2rem 0;
+                @include fontStyle(1.4rem, $light-color);
+            }
+
+            .stars {
+                i {
+                    @include fontStyle(1.7rem, $green);
+                }
+            }
+        }
+    }
+}
