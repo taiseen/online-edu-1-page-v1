@@ -1,0 +1,33 @@
+.about {
+
+    @include flex;
+
+    .image {
+        flex: 1 1 40rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .content {
+        width: 45rem;
+
+        span {
+            @include fontStyle(2rem, $green);
+        }
+
+        h3 {
+            padding-top: 2rem;
+            @include fontStyle(2.5rem, $black);
+        }
+
+        p {
+            padding    : 1.5rem 0;
+            line-height: 2;
+            @include fontStyle(1.4rem, $light-color);
+        }
+    }
+
+
+}

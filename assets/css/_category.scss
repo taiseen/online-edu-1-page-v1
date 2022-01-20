@@ -1,0 +1,39 @@
+.category {
+
+    .box-container {
+
+        @include grid(30rem);
+
+        .box {
+            padding   : 3rem 2rem;
+            text-align: center;
+            border    : $border;
+
+            &:hover i {
+                transform: translateY(-1rem);
+            }
+
+            i {
+                height          : 5.5rem;
+                width           : 5.5rem;
+                line-height     : 5.5rem;
+                border-radius   : .5rem;
+                background-color: $green;
+                text-align      : center;
+                margin-bottom   : 1.5rem;
+                @include fontStyle(2rem, $white);
+            }
+
+            h3 {
+                @include fontStyle(2rem, $black);
+            }
+
+            p {
+                line-height: 2;
+                padding-top: 1.5rem;
+                @include fontStyle(1.4rem, $light-color);
+            }
+        }
+
+    }
+}

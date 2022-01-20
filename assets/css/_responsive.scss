@@ -9,6 +9,7 @@
 @media (max-width: 991px) {
 
     body {
+        /* margin-left: 0; */
         padding-left: 0;
     }
 
@@ -19,6 +20,8 @@
     .header {
         left: -110%;
 
+        /* Behavior Changing ==> Help of JS */
+        
         &.userClick {
             left      : 0;
             transition: .5s ease;
@@ -26,6 +29,9 @@
         }
     }
 
+    .home .content h3 {
+        font-size: 2.5rem;
+    }
 }
 
 @media (max-width: 450px) {

@@ -37,8 +37,51 @@ html {
 }
 
 body {
+    // margin-left: 30rem;
     padding-left: 30rem;
 }
 
+section {
+    padding: 3rem 5%;
+
+    &:nth-child(odd) {
+        background-color: $light-bg;
+    }
+}
+
+.heading {
+    text-align   : center;
+    padding-top  : 1rem;
+    margin-bottom: 3rem;
+
+    span {
+        text-transform: uppercase;
+        @include fontStyle(2rem, $green);
+    }
+
+    h3 {
+        padding-top: 1rem;
+        @include fontStyle(3rem, $black);
+    }
+}
+
+
+.btn {
+    display         : inline-block;
+    margin-top      : 1rem;
+    padding         : 1.2rem 3rem;
+    cursor          : pointer;
+    background-color: $black;
+    @include fontStyle(1.7rem, $white);
+
+    &:hover {
+        background: $green;
+    }
+
+}
+
 @import 'header';
+@import 'home';
+@import 'category';
+@import 'about';
 @import 'responsive';

@@ -1,0 +1,73 @@
+.home {
+
+    @include flex;
+
+    .image {
+        flex: 1 1 40rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .content {
+        width: 45rem;
+
+        span {
+            @include fontStyle(2rem, $green);
+        }
+
+        h3 {
+            padding: 2rem 0;
+            @include fontStyle(3rem, $black);
+
+            a {
+                color: $green;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        p {
+            padding-bottom: 1rem;
+            line-height   : 2;
+            @include fontStyle(1.4rem, $light-color);
+        }
+    }
+
+}
+
+.info-container {
+    @include grid(25rem);
+
+
+    .box {
+        padding         : 3rem;
+        background-color: $white;
+        display         : flex;
+        align-items     : center;
+        gap             : 1.5rem;
+        border          : $border;
+
+        i {
+            height          : 5rem;
+            width           : 5rem;
+            line-height     : 5rem;
+            border-radius   : 50%;
+            background-color: $green;
+            text-align      : center;
+            @include fontStyle(2rem, $white);
+        }
+
+        h3 {
+            padding-bottom: .5rem;
+            @include fontStyle(2rem, $black);
+        }
+
+        p {
+            @include fontStyle(1.5rem, $light-color);
+        }
+    }
+}

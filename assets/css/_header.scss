@@ -12,6 +12,7 @@
     display         : none;
     @include fontStyle(2.5rem, $white);
 
+    /* active at JS click */
     &.fa-times {
         color           : $black;
         background-color: $white;
