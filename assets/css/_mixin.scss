@@ -1,13 +1,3 @@
-$red         : #da3d3d;
-$green       : #44bb6a;
-$black       : #263268;
-$white       : #FFF;
-$yellow      : #FF0;
-$light-bg    : #F6F6F6;
-$light-color : #777;
-$border      : .1rem solid #999;
-
-
 @mixin grid($value) {
     display              : grid;
     grid-template-columns: repeat(auto-fit, minmax($value, 1fr));

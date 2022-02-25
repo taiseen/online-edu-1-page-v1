@@ -5,12 +5,12 @@
 
         .box {
             padding         : 2rem;
-            border          : $border;
+            border          : var(--border);
             text-align      : center;
-            background-color: $white;
+            background-color: var(--white);
 
             h3 {
-                @include fontStyle(2rem, $black);
+                @include fontStyle(2rem, var(--black));
             }
 
             img {
@@ -18,11 +18,11 @@
             }
 
             .amount {
-                @include fontStyle(5rem, $black);
+                @include fontStyle(5rem, var(--black));
 
                 span {
                     padding: 0 .5rem;
-                    @include fontStyle(2.5rem, $green);
+                    @include fontStyle(2.5rem, var(--green));
                 }
             }
 
@@ -31,10 +31,10 @@
 
                 p {
                     padding: 1rem 0;
-                    @include fontStyle(1.5rem, $light-color);
+                    @include fontStyle(1.5rem, var(--lightColor));
 
                     i {
-                        color        : $green;
+                        color        : var(--green);
                         padding-right: .5rem;
 
                         &.fa-times {
@@ -42,11 +42,7 @@
                         }
                     }
                 }
-
-
             }
-
         }
     }
-
 }

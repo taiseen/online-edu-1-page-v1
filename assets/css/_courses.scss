@@ -6,7 +6,7 @@
         .box {
             position  : relative;
             padding   : 2rem;
-            border    : $border;
+            border    : var(--border);
             overflow  : hidden;
             text-align: center;
 
@@ -23,50 +23,48 @@
 
                 h3 {
                     padding-bottom: 1rem;
-                    @include fontStyle(2rem, $black);
+                    @include fontStyle(2rem, var(--black));
                 }
             }
 
             .content {
-                position       : absolute;
-                top            : 0;
-                left           : 0;
-                width          : 100%;
-                height         : 100%;
-                padding        : 2rem;
-                background     : $green;
-                display        : flex;
-                flex-flow      : column;
-                align-items    : center;
-                justify-content: center;
-                opacity        : 0;
+                position        : absolute;
+                top             : 0;
+                left            : 0;
+                width           : 100%;
+                height          : 100%;
+                padding         : 2rem;
+                display         : flex;
+                flex-flow       : column;
+                align-items     : center;
+                justify-content : center;
+                background-color: var(--green);
+                opacity         : 0;
 
                 .stars {
                     padding-bottom: 2rem;
 
                     i {
-                        @include fontStyle(1.7rem, $yellow);
+                        @include fontStyle(1.7rem, var(--yellow));
                     }
                 }
 
                 h3 {
                     padding: 2rem;
-                    @include fontStyle(2.5rem, $white);
+                    @include fontStyle(2.5rem, var(--white));
                 }
 
                 p {
                     padding    : 1.5rem 0;
                     line-height: 2;
-                    @include fontStyle(1.4rem, $white);
+                    @include fontStyle(1.4rem, var(--white));
                 }
 
                 .btn:hover {
-                    color           : $black;
-                    background-color: $yellow;
+                    color           : var(--black);
+                    background-color: var(--yellow);
                 }
-
             }
         }
-
     }
 }

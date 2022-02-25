@@ -7,7 +7,7 @@
         .box {
             padding   : 3rem 2rem;
             text-align: center;
-            border    : $border;
+            border    : var(--border);
 
             &:hover i {
                 transform: translateY(-1rem);
@@ -17,23 +17,22 @@
                 height          : 5.5rem;
                 width           : 5.5rem;
                 line-height     : 5.5rem;
-                border-radius   : .5rem;
-                background-color: $green;
+                border-radius   : 0.5rem;
                 text-align      : center;
-                margin-bottom   : 1.5rem;
-                @include fontStyle(2rem, $white);
+                background-color: var(--green);
+                @include fontStyle(2rem, var(--white));
             }
 
             h3 {
-                @include fontStyle(2rem, $black);
+                padding-top: 1.5rem;
+                @include fontStyle(2rem, var(--black));
             }
 
             p {
                 line-height: 2;
                 padding-top: 1.5rem;
-                @include fontStyle(1.4rem, $light-color);
+                @include fontStyle(1.4rem, var(--lightColor));
             }
         }
-
     }
 }

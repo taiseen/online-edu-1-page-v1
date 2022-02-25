@@ -14,20 +14,18 @@
         width: 45rem;
 
         span {
-            @include fontStyle(2rem, $green);
+            @include fontStyle(2rem, var(--green));
         }
 
         h3 {
             padding-top: 2rem;
-            @include fontStyle(2.5rem, $black);
+            @include fontStyle(2.5rem, var(--black));
         }
 
         p {
             padding    : 1.5rem 0;
             line-height: 2;
-            @include fontStyle(1.4rem, $light-color);
+            @include fontStyle(1.4rem, var(--lightColor));
         }
     }
-
-
 }

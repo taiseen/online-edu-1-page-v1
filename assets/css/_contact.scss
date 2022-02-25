@@ -17,24 +17,21 @@
                     height          : 5rem;
                     width           : 5rem;
                     line-height     : 5rem;
+                    margin-top      : -.5rem;
                     border-radius   : 50%;
                     text-align      : center;
-                    background-color: $green;
-                    margin-top      : -1rem;
-                    @include fontStyle(1.7rem, $white);
+                    background-color: var(--green);
+                    @include fontStyle(1.7rem, var(--white));
                 }
 
                 .info {
                     h3 {
-                        padding-bottom: 1rem;
-                        @include fontStyle(2rem, $black);
+                        @include fontStyle(2rem, var(--black));
                     }
 
                     p {
-                        @include fontStyle(1.5rem, $light-color);
+                        @include fontStyle(1.5rem, var(--lightColor));
                     }
-
-
                 }
 
                 &:nth-child(even) {
@@ -46,22 +43,21 @@
 
             .share {
                 padding-top: 1rem;
-
+            
                 a {
                     height          : 5rem;
                     width           : 5rem;
                     line-height     : 5rem;
-                    margin-right    : .1rem;
-                    background-color: $black;
+                    margin-right    : .5rem;
+                    background-color: var(--black);
                     text-align      : center;
-                    @include fontStyle(2rem, $white);
+                    @include fontStyle(2rem, var(--white));
 
                     &:hover {
-                        background-color: $green;
+                        background-color: var(--green);
                     }
                 }
             }
-
         }
 
 
@@ -82,10 +78,10 @@
             textarea {
                 padding         : 1.4rem;
                 margin          : .7rem 0;
-                background-color: $light-bg;
+                background-color: var(--lightBg);
                 text-transform  : none;
-                border          : $border;
-                @include fontStyle(1.6rem, $light-color);
+                border          : var(--border);
+                @include fontStyle(1.6rem, var(--lightColor));
             }
 
             textarea {

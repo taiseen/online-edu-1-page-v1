@@ -14,15 +14,15 @@
         width: 45rem;
 
         span {
-            @include fontStyle(2rem, $green);
+            @include fontStyle(2rem, var(--green));
         }
 
         h3 {
             padding: 2rem 0;
-            @include fontStyle(3rem, $black);
+            @include fontStyle(3rem, var(--black));
 
             a {
-                color: $green;
+                color: var(--green);
 
                 &:hover {
                     text-decoration: underline;
@@ -33,42 +33,40 @@
         p {
             padding-bottom: 1rem;
             line-height   : 2;
-            @include fontStyle(1.4rem, $light-color);
+            @include fontStyle(1.4rem, var(--lightColor));
         }
     }
-
 }
 
 .info-container {
     @include grid(25rem);
 
-
     .box {
         padding         : 3rem;
-        background-color: $white;
+        background-color: var(--white);
         display         : flex;
         justify-content : center;
         align-items     : center;
         gap             : 1.5rem;
-        border          : $border;
+        border          : var(--border);
 
         i {
             height          : 5rem;
             width           : 5rem;
             line-height     : 5rem;
             border-radius   : 50%;
-            background-color: $green;
+            background-color: var(--green);
             text-align      : center;
-            @include fontStyle(2rem, $white);
+            @include fontStyle(2rem, var(--white));
         }
 
         h3 {
             padding-bottom: .5rem;
-            @include fontStyle(2rem, $black);
+            @include fontStyle(2rem, var(--black));
         }
 
         p {
-            @include fontStyle(1.5rem, $light-color);
+            @include fontStyle(1.5rem, var(--lightColor));
         }
     }
 }
